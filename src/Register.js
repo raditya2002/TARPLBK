@@ -1,6 +1,6 @@
 // Register.jsx
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "./Register.css";
@@ -12,10 +12,16 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
 
+  useEffect(() => {
+    if (sessionStorage.getItem("username")) {
+      navigate("/Countries");
+    }
+  }, []);
+
   const validate = () => {
     let isProceed = true;
     let errorMessage = "Please enter the value in ";
-    
+
     if (id === null || id === "") {
       isProceed = false;
       errorMessage += " Username";
@@ -72,43 +78,19 @@ const Register = () => {
         <form onSubmit={handleSubmit}>
           <div className="register-group">
             <label htmlFor="id">User Name</label>
-            <input
-              type="text"
-              id="id"
-              value={id}
-              onChange={(e) => setId(e.target.value)}
-              className="form-control"
-            />
+            <input type="text" id="id" value={id} onChange={(e) => setId(e.target.value)} className="form-control" />
           </div>
           <div className="register-group">
             <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="form-control"
-            />
+            <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} className="form-control" />
           </div>
           <div className="register-group">
             <label htmlFor="name">Full Name</label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="form-control"
-            />
+            <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} className="form-control" />
           </div>
           <div className="register-group">
             <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="form-control"
-            />
+            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" />
           </div>
           <button type="submit" className="btn btn-success">
             Register
