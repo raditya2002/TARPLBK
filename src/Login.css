@@ -1,0 +1,63 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../public/bg.jpg'); /* Ganti dengan path gambar yang benar */
+    background-size: 1490px 840px;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .login-form {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Lebar form login */
+  }
+  
+  .login-header {
+    color: #333;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .btn-info {
+    background-color: #9C93B5; /* Ganti dengan warna tombol yang diinginkan */
+    border-color: #9C93B5; /* Ganti dengan warna border tombol yang diinginkan */
+    width: 100%; /* Lebar tombol */
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  
+  .btn-info:hover {
+    background-color: #27ae60; /* Ganti dengan warna hover tombol yang diinginkan */
+    border-color: #27ae60; /* Ganti dengan warna hover border tombol yang diinginkan */
+  }
+  
+  .register-link {
+    
+    margin-top: 15px;
+    
+  }
+  
+  .register-link a {
+    color: #D00000; /* Ganti dengan warna yang diinginkan */
+    font-weight: bold;
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contoh CSS untuk memberi warna font pada link */
+.register-link p {
+    color: #000000; /* Warna biru untuk teks paragraf */
+  }
+  

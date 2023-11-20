@@ -1,0 +1,28 @@
+{
+  "user": [
+    {
+      "id": "dimsaamf",
+      "name": "Dimsa Mutiara Firstayodi",
+      "password": "dimsa123",
+      "email": "06dimsa@gmail.com"
+    },
+    {
+      "id": "jooevd",
+      "name": "Joanne Eva Donna",
+      "password": "jojo2",
+      "email": "joanne@gmail.com"
+    },
+    {
+      "id": "ahmadraditya",
+      "name": "Ahmad Raditya Alrazi Wibowo",
+      "password": "ahmadraditya3",
+      "email": "ahmadraditya@gmail.com"
+    },
+    {
+      "id": "anam",
+      "name": "Muhammad Rofiul Anam",
+      "password": "anam4",
+      "email": "anam@gmail.com"
+    }
+  ]
+}

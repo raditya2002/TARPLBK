@@ -1,0 +1,56 @@
+/* Login.css */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../public/reg.jpg'); /* Ganti dengan path gambar yang benar */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .register-form {
+    background-color: rgba(46, 139, 87, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Lebar form register */
+  }
+  
+  .register-header {
+    color: #333;
+    text-align: center;
+  }
+  
+  .register-group {
+    margin-bottom: 15px;
+  }
+  
+  .btn-success {
+    background-color: #D00000; /* Ganti dengan warna tombol yang diinginkan */
+    border-color: #D00000; /* Ganti dengan warna border tombol yang diinginkan */
+    width: 100%; /* Lebar tombol */
+    font-weight: bold;
+    color: #FFFFFF; /* Ganti dengan warna font yang diinginkan */
+  }
+  
+  .btn-success:hover {
+    background-color: #CC0000; /* Ganti dengan warna hover tombol yang diinginkan */
+    border-color: #CC0000; /* Ganti dengan warna hover border tombol yang diinginkan */
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .login-link a {
+    color: #2ecc71; /* Ganti dengan warna yang diinginkan */
+    font-weight: bold;
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
