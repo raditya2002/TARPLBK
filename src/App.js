@@ -1,27 +1,30 @@
 import React from "react";
-import Countries from "./components/Countries/Countries";
+import Countries from "./pages/Countries";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Home";
-import Login from "./Login";
-import Register from "./Register";
-import EditUser from "./Edituser";
-import Appheader from "./Appheader";
-import Detailcountries from "./components/DetailCountries/Detailcountries";
+import User from "./pages/User";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import EditUser from "./pages/Edituser";
+import Appheader from "./components/Appheader";
+import { ToastContainer } from 'react-toastify';
+import CountryDetail from "./pages/Detail";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Appheader />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Countries" element={<Countries />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/edit-user/:userId" element={<EditUser />} />
-        <Route path="/Countries/:countryId" element={<Detailcountries />} />
-        
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <ToastContainer theme='colored' position='top-center'></ToastContainer>
+      <BrowserRouter>
+        <Appheader></Appheader>
+        <Routes>
+          <Route path="/User" element={<User />} />
+          <Route path="/" element={<Countries />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/edit-user/:userId" element={<EditUser />} />
+          <Route path="/detail/:cca2" element={<CountryDetail/>}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

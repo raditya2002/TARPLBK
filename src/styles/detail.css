@@ -1,0 +1,42 @@
+.container-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 7.5rem;
+    padding-top: 5rem;
+    text-align: center;
+  }
+  
+  .detail-card {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flag {
+    height: 150px; /* Adjust the height as needed */
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 24px; /* Add 'px' for font size */
+  }
+  
+  .detail-title {
+    
+    padding-bottom: 30px;
+    
+  }
+  
+  /* Add styles for other details as needed */
+  

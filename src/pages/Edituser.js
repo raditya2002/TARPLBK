@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
-import "./Register.css"; // Menggunakan style dari Register.css
+import "../styles/Register.css";
+import EdituserLogic from "../services/EdituserLogic";
 
 const EditUser = () => {
   const { userId } = useParams();
   const navigate = useNavigate();
-
   const [id, setId] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
@@ -33,23 +32,8 @@ const EditUser = () => {
   const handleEditSubmit = (e) => {
     e.preventDefault();
     let editedUser = { id, name, password, email };
-
-    // Perform the edit operation on the server
-    // After a successful edit, navigate back to the home page
-    fetch(`http://localhost:8000/user/${userId}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": "Bearer " + sessionStorage.getItem("jwttoken"),
-      },
-      body: JSON.stringify(editedUser),
-    })
-      .then(() => {
-        toast.success("User edited successfully.");
-        navigate("/");
-      })
-      .catch((error) => console.error("Error editing user:", error));
-  };
+    EdituserLogic.handleEdituserLogic(userId, editedUser, navigate);
+};
 
   return (
     <div className="register-container">

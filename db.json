@@ -8,8 +8,8 @@
     },
     {
       "id": "jooevd",
-      "name": "Joanne Eva Donna",
-      "password": "jojo2",
+      "name": "Joanne Eva",
+      "password": "",
       "email": "joanne@gmail.com"
     },
     {
@@ -23,6 +23,12 @@
       "name": "Muhammad Rofiul Anam",
       "password": "anam4",
       "email": "anam@gmail.com"
+    },
+    {
+      "id": "chenle",
+      "name": "Chenle",
+      "password": "chenle123",
+      "email": "chenle@gmail.com"
     }
   ]
 }

@@ -31,15 +31,17 @@ const Appheader = () => {
     <div>
       {showmenu && (
         <div className="header" style={{ background: "#ff533a", padding: "10px", borderBottom: "1px solid #e2e2e2", position: "relative" }}>
-          <div style={{ marginLeft: "30px", float: "left", fontSize: "18px", color: "#fff", fontWeight: "bold" }}>
+          <div style={{ marginLeft: "40px", float: "left", fontSize: "18px", color: "#fff", fontWeight: "bold" }}>
             Halo, <b>{displayusername}</b>
           </div>
-          <div style={{ position: "absolute", left: "50%", transform: "translateX(-50%)", fontSize: "16px", color: "#fff", fontWeight: "bold", fontSize: "18px" }}>by Kelompok 23</div>
-          <Link to={"/"} style={{ marginLeft: "1300px",  marginRight: "13px", textDecoration: "none", transform: "translateX(-50%)", fontSize: "16px", color: "#fff", fontWeight: "bold", fontSize: "18px" }}>
-            User
+          <div style={{ position: "absolute", left: "50%", transform: "translateX(-50%)", fontSize: "16px", color: "#fff", fontWeight: "bold" }}>
+            Country List
+          </div>
+          <Link to={"/User"} style={{ float: "right", textDecoration: "none", transform: "translateX(-50%)", fontSize: "16px", color: "#fff", fontWeight: "bold" }}>
+            Management User
           </Link>
-          <Link to={"#"} onClick={handleLogout} style={{ fontSize: "14px", color: "#fff", textDecoration: "none", marginLeft: "12px", fontWeight: "bold", fontSize: "18px" }}>
-            Logout
+          <Link to={"#"} onClick={handleLogout} style={{ fontSize: "14px", color: "#fff", textDecoration: "none", marginLeft: "12px", fontWeight: "bold" }}>
+            (Logout)
           </Link>
         </div>
       )}

@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('../public/reg.jpg'); /* Ganti dengan path gambar yang benar */
+    background-image: url('../../public/reg.jpg'); /* Ganti dengan path gambar yang benar */
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -45,7 +45,7 @@
   }
   
   .login-link a {
-    color: #2ecc71; /* Ganti dengan warna yang diinginkan */
+    color: #000000; /* Ganti dengan warna yang diinginkan */
     font-weight: bold;
     text-decoration: none; /* Menghilangkan garis bawah pada link */
   }

@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.flag {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.flag img {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  flex: 1;
+  padding: 10px;
+  padding-top: 60px;
+}
+
+.headerDesc {
+  margin: 0;
+  text-decoration: none;
+  
+}
+
+p {
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 5px 0;
+}

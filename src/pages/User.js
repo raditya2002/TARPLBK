@@ -20,13 +20,10 @@ const Home = () => {
     }, []);
 
     const handleEdit = (userId) => {
-        // Redirect to the edit page with the userId as a parameter
         navigate(`/edit-user/${userId}`);
     };
 
     const handleDelete = (userId) => {
-        // Perform the delete operation on the server
-        // After a successful deletion, update the user list
         fetch(`http://localhost:8000/user/${userId}`, {
             method: "DELETE",
             headers: {
@@ -42,7 +39,7 @@ const Home = () => {
    
     return (
         <div>
-            <h1 className="text-center" style={{ textAlign: 'center', marginTop: '30px', marginBottom: '40px' }}>User Management</h1>
+            <h1 className="text-center" style={{ textAlign: 'center', marginTop: '30px', marginBottom: '40px' }}>User Management Kelompok 23</h1>
             <table className="table table-bordered table-striped text-center" style={{ marginLeft: '160px', maxWidth: '80%' }}>
                 <thead className="thead-dark">
                     <tr>
@@ -67,7 +64,7 @@ const Home = () => {
                 </tbody>
             </table>
 
-            <Link to="/Countries">
+            <Link to="/">
                 <div style={{ textAlign: "center" }}>
                 <button>List Country</button>
                 </div>
