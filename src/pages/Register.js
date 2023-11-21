@@ -43,7 +43,7 @@ const Register = () => {
             <label htmlFor="email">Email</label>
             <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" />
           </div>
-          <button type="submit" className="btn btn-success">
+          <button type="submit" className="btn-info">
             Register
           </button>
         </form>

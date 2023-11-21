@@ -4,22 +4,21 @@ import "../styles//Login.css";
 import LoginLogic from "../services/LoginLogic";
 
 const Login = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const usenavigate = useNavigate();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const usenavigate = useNavigate();
 
-    const ProceedLogin = (e) => {
-        e.preventDefault();
-        LoginLogic.proceedLogin(username, password, usenavigate);
-    };
+  const ProceedLogin = (e) => {
+    e.preventDefault();
+    LoginLogic.proceedLogin(username, password, usenavigate);
+  };
 
-    useEffect(() => {
-      const loggedInUsername = sessionStorage.getItem("username");
-      if (loggedInUsername) {
-        usenavigate("/");
-      }
-    }, [usenavigate]);
-  
+  useEffect(() => {
+    const loggedInUsername = sessionStorage.getItem("username");
+    if (loggedInUsername) {
+      usenavigate("/");
+    }
+  }, [usenavigate]);
 
   return (
     <div className="login-container">
@@ -34,7 +33,7 @@ const Login = () => {
             <label htmlFor="password">Password</label>
             <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} className="form-control" />
           </div>
-          <button type="submit" className="btn btn-info">
+          <button type="submit" className="btn-info">
             Login
           </button>
         </form>
